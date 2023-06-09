@@ -1,0 +1,161 @@
+---
+title: "Yoksulluk ve İşsizlik"
+author: 
+  - Serdar Ulusoy[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+abstract: |
+ Yoksulluk ve işsizliğin,gelir dağılımı, eğitim seviyesi ve enflasyon arasındaki korelasyonu inceleyen bir çalışmadır.
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 19080248, [Github Repo](https://github.com/serdarulusoy00/finalexam_statistics2.git)
+
+
+# Giriş
+Yoksulluk kişinin kendisi için olduğu kadar bulunduğu çevreyi, sosyo-ekonomik açıdan etkileyen, insanların tarihsel süreçte yapı taşlarından biri olduğu bu toplumların temel sorunlarından biridir. Bu olguları ele alırken yoksulluğu tek başına işlemeye çalışmak bilimsel açıdan eksikliğe sebep olabilir.  Psikolojik, sosyolojik ve ekonomik etkilerinin yanında; insan hakları yönünden incelenen bir olgu olan yoksulluk kavramı, sosyal bilimler araştırmalarının her alanıyla temas edebilmektedir. Yoksulluğun oluşmasında işssizlik kavramı bütün ekonomilerin başlı başına sorunudur. Bu iki kavram birbiriyle korelasyon içindedir. Ekonomistlerin, gelir ve refahın bireylerin eğitim durumuyla ilişkilendirdiği çalışmaların temelinde toplumlun içindeki insanların yoksulluktan kaynaklanan sınıf ayrımını sorgulama durumu vardır. İstihdam, eğitim politikaları yoksulluk ve işsizliği çözmek üzerine geliştirilir. 
+
+## Çalışmanın Amacı
+Yoksulluk ve işsizlik olgularını istatistiksel açıdan incelemeye çalışmak ,verilerin ışığında eğitim ve işssizliğin birbirilerini nasıl etkilediğini görürüz. Veriler günümüzde global firma ve işletmelerin stratejilerini oluşturur. bu bağlamda bireylerin gelirleri doğrultusunda sosyo-kültürel seviyesini oluşturduğunu görmeye çalışacağız. Ekonomik gelişmişliğin önemli göstergelerinden birisi eğitim seviyesinin yüksekliğidir bu açıklamalardan hareketle çalışmamızın amacı günlük hayatta soyut hale gelen bu kavramları istatistiklerle somut hale getirmektir.
+## Literatür 
+Eğitimin beklenen ikinci en önemli bireysel getirisi; eğitim seviyesi yükseldikçe gelir seviyesinin yükselmesi olarak tanımlanmaktadır.[@ccalicskan2007eugitim]. Yoksulluk ve işsizlik üzerine yapılan çalışmaların odak noktası gelir eşitsizliğidir, çalıştığı alanda istikrar yakalayan bireylerin iş hayatındaki aktif çalışması uzayacağı gibi kazançları da devamlılık yüzünden artacaktır. Göreli yoksulluk, Adam Smith’e göre; temel ihtiyaçlarını karşılayabilen, ancak kişisel kaynakların yetersizliği yüzünden toplumun genel refah düzeyinin altında kalan ve topluma sosyal açıdan katılımları engellenmiş olan kişileri ifade etmektedir. [@kayatacsyoksullukla]. Burada vurgulanmak istenen bireylerin yoksulluğunun değişken olduğudur. Temel ihtiyaçları karşılayabilecek kadar gelirin olması toplumun genel hayat standartlarının altında bir yaşama denk gelebilir. Eğer, bireylerin bilgi, beceri ve tutumlarında istenilen yönde bir değişiklik gerçekleşmemişse; ya da istenildiği düzeyde gerçekleşmemiş ise eğitim sürecinin öğrenme ile sonuçlanmadığı, yani başarısız olduğu kabul edilir [@ccalicskan2007eugitim]. Bireylerin yetişmesinde önemli faktör teşkil eden eğitim politikaları bireylerin harcamalarından tutumlarına kadar yön vereceğini belirtilmiştir. Uygulanan eğitim sisteminin yetersizliği işsizliğe ve yoksulluğa yol açacağı çıkarımında bulunabiliriz. Türkiye İstatistik Kurumunun [@sayimmertissizlik] 2004 Yoksulluk Çalışması verileri ülkede yoksulluğun özellikle eğitim düzeyi düşük olanlar, yevmiyeliler, ücretsiz aile işçileri, işsizler ve tarım, inşaat sektöründe çalışanlar arasında yaygın olduğunu göstermektedir. 
+
+ 
+
+[@gokcce2005ilkougretim] İşsizliği yapısal, friksiyonel ve devrevi olarak inceleyebiliriz.Devletler için işsizliğin neden kaynaklandığını gösteren veriler bu başlıklar altında tasnif edilir. Yoksulluk ve işsizliğin yol açtığı mental sorunlar, finansal gerginliğin psikolojiye yansımasıdır [@weich1998poverty]. OECD ülkelerinde yapılan mutluluk endeksi raporlarında baz alınan verilerden elde edilen sonuçların arka planında, eğitim kalitesi düşük ülkeler, işsizlik, yoksulluk ve buradan hareketle psikolojisi çöken bireyler ve toplumlar görülür. Yüksek yoksulluk, ekonomik kalkınmayı gerçekleştirme maliyetlerinin daha büyük olmasına ve ekonomik kalkınmayı engellemesine neden olur [@choirur2021effect]. Ekonomik kalkınmayı hedefleyen ülkelerin başlıca sorunlarından biri olduğuna ulaşabiliriz bu açıklamadan hareketle amaçlanan ekonomik büyümeler hedeflerine ulaşmayabilir. Ülkeler maliye politikalarını uygularken ,kontrol altında tutmaya çalıştıkları parametreleri ekonomik büyümeyi gerçekleştirecek şekilde uygulamayı hedeflerler. Bu hedefler de işsizliği ve yoksulluğu azaltmaya yönelik olur. 
+
+
+
+# Veri 
+Araştırmanın konusu olan yoksulluk ve işsizliği ülkelerin gelir dağılımları üzerinden oluşan verilerden hareketle gelir dağılımındaki eşitsizliği istatistisel açıdan somut hale getirip eğitim, gelişmişlik düzeyinin yoksulluk ve istihdamı nasıl etkilediğini açıklayan verilerin ülkeler arasında nasıl bir farklılık yarattığını yansıtan parametrelere ulaşabiliriz.Bir ülkede eğitim seviyesinin artması hem bireysel hem de toplumsal  olumlu sonuç doğurur. Bireysel açıdan; bireylerin verimlilik, dolayısıyla kazançlarının artmasını sağlayan, işsiz kalma riskini azaltan, işsizlik durumunda iş arama sürecini kısaltan, diğer doğrudan ve dolaylı getirileri ile yaşam kalitesinde belirgin artışlara neden olan eğitim, toplumsal açıdan; hem ekonominin ihtiyacı olan nicelik ve nitelikte işgücünü temin eden, hem de bilgi birikimine yaptığı katkılarla üretim teknolojisindeki yenilikleri mümkün kılan bir süreç olarak, ekonomik büyüme üzerinde belirleyici rol oynar.Gelişmişlik düzeyini gelir dağılımını ve enflasyonu ele parametre olarak aldığımız verilerde Oecd ülkeleri ve Amerika Kıtasından diğer coğrafyalara geniş bir inceleme analiz ortamı altında yoksulluğun, gelişmişlik düzeyinin az olduğu ülkelerde işssizliğin de görece yüksek olduğunu görebiliriz.[@ccalicskan2007eugitim] (Şekil Gelir Dağılımı Grafiği \@ref(fig:plot)) 
+
+```{r,{r, echo=FALSE} 
+library(tidyverse)
+library(here)
+countries_income_distribution <- read_csv(here("../data/countries_income_distribution.csv"))
+powerty<- read_csv(here("../data/powerty.csv"))
+Enflasyon<- read_csv(here("../data/Enflasyon.csv"))
+
+  
+```
+
+
+
+```{r, echo=FALSE}
+library(xtable) 
+# devtools::install_github("emraher/summarytools")
+library(summarytools)
+st_options(lang = "tr")
+```
+
+`echo=FALSE` seçeneği ile kodların türetilen pdf dosyasında görünmesini engelleyin ve sonuçlarınızı tablo halinde rapor edin.
+
+```{r echo=FALSE, results='asis', }
+countries_income_distribution %>%
+  select("LOCATION", "Value", "Year", "TIME", "Unit","MEASURE",) %>% 
+  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
+  xtable(caption = "Özet İstatistikler",
+         label = "tab:ozet",
+         align = c("l", "c", "c", "c", "c", "c")) %>% 
+  print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
+```
+
+```{r echo=FALSE, results='asis'}
+powerty %>%
+  select("TIME", "Value", "LOCATION", "INDICATOR", "MEASURE") %>% 
+  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
+  xtable(caption = "Özet İstatistikler",
+         label = "tab:ozet",
+         align = c("l", "c", "c", "c", "c", "c")) %>% 
+
+    print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
+
+```{r echo=FALSE, results='asis'}
+Enflasyon %>%
+  select("TIME", "Value", "LOCATION", "INDICATOR","MEASURE","TIME") %>% 
+  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
+  xtable(caption = "Özet İstatistikler",
+         label = "tab:ozet",
+         align = c("l", "c", "c", "c", "c", "c")) %>% 
+  print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
+```
+
+
+# Yöntem ve Veri Analizi
+ Veri analizimde tümevarım yoluyla elde ettiğim enflasyon gelir düzeyi ve gelişmişlik düzeyi üzerinden yoksulluk ve işssizlik konusunda çıkarımlar yapabiliriz.Dünya nüfusunda yoksulluğun boyutu, tüm yoksulluk türlerinde oldukça yüksektir. Türkiye’de ise mutlak yoksulluk neredeyse sıfır iken, toplumun genel refahseviyesinin altında kalanların, yani göreli yoksulluğun oranı AB ortalamalarının üstündedir. Ayrıca bu oran düşen yoksulluk oranları arasında Dolayısıyla göreli yoksulluk, ülkemizin temel sorunları arasında yer almaktadır. Oecd Avrupa ülkelerinin gelişmilik oranı ve enflasyonun düşüklüğü arasındaki korelasyonu (Şekil 2 Enflasyon \@ref(fig:plot2) gibi) görebiliriz. Çizgide olanlar Oecd datalarına göre gelişmiş ülkeler arasında yer alır.İstihdam yüksek enflasyon düşüktür. TÜrkiye'den hareketle diğer gelişmekte olan ülkeler Arjantin, Meksika gibi enflasyonun %40 ile %70'lere dayandığını ve ortalama çizginin üstünde bir noktada yer aldığını görebiliriz.Bu verilerden hareketle birinci grafik ve tabloya bağlayacak olursak konuyu gelişmişlik düzeyi yüksek olan ülkelerin yanı sıra çok düşük olan dünya ülkelerininin ortalamayı düşürdüğünü örneğin ; Afrika,Güney Amerika ülkeri vb.
+  Yoksulluğun tanımını yapmaktaki zorluk ölçülmesi için de geçerli ve bu ikikavram birbiriyle bağlantılıdır. Ölçüm yaparken hangi parametrelerin  kullanılacağı, hangi özelliklere sahip kişilere yoksul denileceği sorusunu beraberinde getirmektedir. Verilerimde 18-65 yaş arası hedeflenmiştir. Buna rağmen yoksulluğu ölçmek için matematiksel hesaplamalara dayanan ve yoksulluğun nüfus içindeki oranının bulunmasına yönelik yöntemler geliştirilmiştir. (Şekil Gelir Dağılımı Grafiği \@ref(fig:plot) Gelir dağılımındaki özet tablomda Oecd ülkeleri ve diğer ülkelerin mod medyan dağılımı mevcuttur. AB ülkeleri ve Amerika Kanada, Avusturalya gibi ülkelerin gelir dağılımının yüksekliğine karşın diğer dünya üleklerindeki gelir dağılımını Dünya'da ortalama açısından azaltmıştır.Gelir dağılımının az olmasının sebeplerini çalışmamızda işlemişken bu parametrelerin sonucu matematiksel değerlere yansımıştır. Para birimi entagrasyonu ile kişi başına düşen gelirin düşüklüğü yüksek enflasyon yaşayan ülkeler ile refah içinde yaşayan ülkelerin dağılımına grafik ve tablolardan ulaşılabilir. Yoksulluk oranı (powerty gap) OECD verileri, ülkelerin yoksulluk oranlarını karşılaştırmamıza olanak tanır. Yüksek yoksulluk oranlarına sahip ülkeler, yoksullukla mücadele politikalarının güçlendirilmesi gerektiğini gösterebilir. 
+Yoksulluk Sınırları ve çıktı olarak karşımıza çıkan ortalamalar OECD'nin belirlediği yoksulluk sınırları, bir ülkede yoksulluk riski altında olan insanların sayısını belirlemek için kullanılır. Bu verilere dayanarak yapılan yorumlar, sosyal politikaların yoksulluk riskini azaltmadaki etkinliğini değerlendirebilir. Yoksulluk sınırının altında yaşayan nüfusun azalması, Enflasyon ile mücadele aracı olan ekonomi politikalarının ülkeden ülkeye değişiklik gösterdiği sosyolokik açıdan farklılıkların kurumsal yapıların gelişmişlik düzeyi üzerinde etkisi olduğunu gösterebiliriz.Eğitim seviyesindeki gelişmişlik ortalamada olan dünya ülkelerde yüksek olduğundan enflasyonları düşüktür, işsizlik azdır. Nitelikli iş gücü ve eğitim seviyesi ile toplumun genel ortalamasının refah payından aldığı dilim Kanada,Abd,Avusturalya,Norveç vb ülkelerde enflasyon oranlarından ve gelir seviyesinden görebiliriz bu ülkelerin karşısında karşılaştırma yapacağımız iki ülke Arjantin ve Türkiye olabilir. Ajantin'de %50-70 arası enflasyon bulunmaktadır,Türkiye'de %71 Enflasyon Oecd datalarına göre mevcuttur.
+
+
+
+$$
+Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
+$$
+
+Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
+
+
+
+```{r plot, fig.align='center', fig.cap='Gelir Dağılımı Grafiğir, echo=FALSE'}
+countries_income_distribution %>% 
+  ggplot(aes(x = TIME, y = Value)) +
+  geom_point() +
+  geom_smooth() +
+  scale_x_continuous("TIME") + 
+  scale_y_continuous("Value")
+
+```{r plot2, fig.align='center', fig.cap='Enflasyon'}
+Enflasyon %>% 
+  ggplot(aes(x = TIME, y = Value)) +
+  geom_point() +
+  geom_smooth() +
+  scale_x_continuous("TIME") + 
+  scale_y_continuous("Value")
+
+
+```{r plot1, fig.align='powerty', fig.cap='yoksulluk grafik'}
+powerty %>% 
+  ggplot(aes(x = TIME, y = Value)) +
+  geom_point() +
+  geom_smooth() +
+  scale_x_continuous("TIME") + 
+  scale_y_continuous("Value")
+```
+
+\newpage        
+                                 
+                                               
+                                                                                        
+# Sonuç
+ Veriler, grafiklere çevrilerek anlaşılması kolay hale getirildikten sonra, bu verilerle beraber yoksulluğun, işsizliğin ve eğitimin gelişmiş ülke olmakta ne kadar önemli olduğu her konu başlılığın ayrı ayrı değerlendirilmesiyle beraber bu verilerin grafik yorumları ise fazlasıyla önem kazanmaktadır. Grafiklerin esas amacı Türkiye, Arjantin vb gelişmekte olan ülkelerin, gelişmesinde önemli paya sahip yoksulluğun ve işsizliğin düşürülmesinin yanı sıra eğitim arttırmanın gelişmiş ülke olmakta faydası ve somut gerçekliği yadsınamaz bir gerçektir. Bu nedenle OECD ülkelerinin özellikle avrupa ve kuzey amerika ortalamalarının gelişmişliğini ve refahını toplumsal olarak yakalayabilmek için bu analizimizden çıkaracağımız ders işsizliğin ve yoksulluğu düşürülmesi için öncelikle enflasyonun baskı altına alınması, dengede tutulup sabitlendikten sonra alım gücünün yükseltilmesi gerekmektir. Bu bize alım gücüyle beraber işsizliğin azalması ve yoksulluğun düşürülmesi için bir çözüm sunar. Bir o kadar da önemli olan eğitimin yine OECD ülkelerinde olduğu gibi ortalama kalitenin seviyesine yükseltilmesi gelişmiş ülke olabilmek için bu yapıların onarılması ya da sistemlerin kurulması yine işsizliğin azaltılması ve yoksulluğun azaltılıp bilinçli toplum oluşturmak adına yadsınamaz bir gerçektir.Kurumların güçlü olmadığı ülkelerde gelişmişlik az veriler görece düşük kalmıştır. Bu bölümden çıkaracağımız sonuç ise ülke kalkınması, gelişmesi, işsizliğin ve yoksulluğu azaltılması gelir eşitsizliği ve pastanın düzgün dağıtılmaması belirli bir coğrafyanın istatistiksel olarak göreli iyiliğini  kapitalist Dünya sisteminin ve uluslararası piyasanın sonuçları arasındadır.
+
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
